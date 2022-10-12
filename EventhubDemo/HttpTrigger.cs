@@ -25,7 +25,7 @@ namespace EventhubDemo
             var connectionString = Environment.GetEnvironmentVariable("AzureWebJobsEventHub");            
 
             // Create a producer client that you can use to send events to an event hub
-            var producerClient = new EventHubProducerClient(connectionString, "cbreventhub");
+            var producerClient = new EventHubProducerClient(connectionString, "oliverniklas");
 
             // Create a batch of events 
             using EventDataBatch eventBatch = await producerClient.CreateBatchAsync();
